@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "sublime text usage"
+date:   2016-07-27 14:17:00 +0800
+categories: jekyll update
+---
+
 #sublime text3
 
 ###一、从官网下载sublimetext3安装包
