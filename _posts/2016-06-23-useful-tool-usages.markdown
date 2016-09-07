@@ -6,3 +6,4 @@ categories: jekyll update
 ---
 
 >addr2line -f -e xxx.so 000119cb
+>objdump -j .text -l -C -S xxx.so
