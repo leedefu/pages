@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk about design pattern"
+title:  "Design Pattern"
 date:   2016-06-23 12:07:54 +0800
 categories: jekyll update
 ---
