@@ -24,9 +24,10 @@ categories: jekyll update
   3.rsa                               
                                 
   命令：                             
-    openssl rsautl -verify -in 1 -inkey rsa_pubkey_for_server.pem -out out.txt -pubin                           
+    openssl rsautl -verify -in 1 -inkey rsa_pubkey_for_server.pem -out out.txt -pubin  
                                 
-    openssl rsa -in rsa_pivkey_for_fctdev---.pem -pubout -out pub.txt                           
+    openssl rsa -in rsa_pivkey_for_fctdev---.pem -pubout -out pub.txt
+
   4.base64                                
                                 
   5.openssl如何支持multi-thread                               
