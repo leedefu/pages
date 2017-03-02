@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "markdown sample"
-date:   2016-06-23 12:07:54 +0800
+date:   2015-06-23 12:07:54 +0800
 categories: jekyll update
 ---
 
