@@ -5,8 +5,48 @@ date:   2016-06-23 12:07:54 +0800
 categories: jekyll update
 ---
 
-# chapter1 
+* 批量生成文件	
+  + for i in `echo {0..2}{0..2}{0..2}`; do touch 00000000\_000000\_$i;echo 00000000\_000000\_$i;sleep 1;done;	
+	
+* 批量生成墓碑文件	
+  + for i in $(ps -o pid);do echo $i;crashreporter $i;sleep 1;done;	
 
-## chapter2 
+* 查找文件  
+  详细：在指定目录查找指定pattern的文件 
+  查找后缀为.h和.cpp的文件   
+  find . -name "\*.h" -o -name "\*.cpp"  
+  查找后缀为.h的文件  
+  find . -name "\*.h"  
 
-### chapter3 
+* 查找文本  
+  在指定目录，指定的pattern下，查找文本  
+  在当前目录下，查找.cpp文件中的xxx字符串  
+  grep -nr --inluce="\*.cpp" xxx .  
+  在当前目录下，查找所有文件中的xxx字符串，且忽略大小写  
+  grep -nir xxx .  
+
+* 替换  
+  对指定类型的文件，进行查找和替换文本  
+  find . -name "\*.h" -o -name "\*.cpp" | xargs sed -i "s/\t/    /g"   
+  在当前目录下，替换.h和.cpp文件中的tab为四个空格  
+
+* 批量改名  
+  重命名  
+  find . -name nutshell.mk | awk '{print $0" "$0".bak" }' | xargs -n 2 mv
+
+  改回来：  
+  find . -name nutshell.mk.bak | awk -F ".bak" '{print $0" "$1}' | xargs -n 2 mv  
+
+* 创建指定大小的文件  
+  创建1024bytes的空文件： 
+  dd if=/dev/zero of=filename bs=1 count=1 seek=1023  
+  count : 写的快次数  
+  bs    : 每个块的字节数  
+  seek  : 跳过块的次数   
+  dd if=/dev/zero of=filename bs=1024 count=1  
+
+* 查看系统信息  
+  getconf LONG_BIT (获取操作系统位数)  
+  getconf WORD_BIT   
+  file /bin/ls  
+  uname -m   
