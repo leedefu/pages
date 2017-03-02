@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 * 批量生成文件	
-  + for i in `echo {0..2}{0..2}{0..2}`; do touch 00000000\_000000\_$i;echo 00000000\_000000\_$i;sleep 1;done;	
+  + for i in \`echo {0..2}{0..2}{0..2}\`; do touch 00000000\_000000\_$i;echo 00000000\_000000\_$i;sleep 1;done;	
 	
 * 批量生成墓碑文件	
   + for i in $(ps -o pid);do echo $i;crashreporter $i;sleep 1;done;	
