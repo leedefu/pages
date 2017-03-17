@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Encryption/Decryption Introduction"
+title:  "[Encryption/Decryption] - Introduction"
 date:   2017-03-01 12:07:54 +0800
 categories: jekyll update
 ---

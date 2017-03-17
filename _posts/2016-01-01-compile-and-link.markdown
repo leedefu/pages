@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Compile And Link"
+title:  "[Compiling and Linking] - Lib Path"
 date:   2016-01-01 13:52:54 +0800
 categories: jekyll update
 ---
