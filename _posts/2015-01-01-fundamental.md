@@ -7,6 +7,7 @@ categories: jekyll update
 
 #### **Lightweight markup language**  
 - [makedown tutorial][1]
+- [quick help][5]
 
 #### **Web search engine**  
 - [google][2]  
@@ -34,3 +35,4 @@ categories: jekyll update
 [2]:https://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp&gws_rd=ssl
 [3]:http://stackoverflow.com/
 [4]:https://github.com/
+[5]:http://commonmark.org/help/
