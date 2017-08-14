@@ -48,5 +48,10 @@ categories: jekyll update
 * 查看系统信息  
   getconf LONG_BIT (获取操作系统位数)  
   getconf WORD_BIT   
+  获取Page Size   
+  getconf PAGESIZE
+      cat /proc/meminfo (Mapped)  
+      cat /proc/vmstat (nr_mapped)  
+      Mapped / nr_mapped  
   file /bin/ls  
   uname -m   
